@@ -29,7 +29,7 @@ if (count($pesan_datang) > 2) {
 }
 #-------------------------[Function]-------------------------#
 function simi($keyword) {
-    $uri = "https://corrykalam.gq/simi.php?text=" . $keyword;
+    $uri = "https://simiko.herokuapp.com/index.php?text=" . $keyword;
     $response = Unirest\Request::get("$uri");
     $json = json_decode($response->raw_body, true);
     $result = $json["answer"];
