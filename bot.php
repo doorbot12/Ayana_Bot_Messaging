@@ -779,6 +779,21 @@ if($message['type']=='text') {
         );
     }
 }
+//fitur simi
+if($message['type']=='text') {
+            if ($command == 'simi') {
+        $result = simi(options);
+        $balas = array(
+            'replyToken' => $replyToken,
+            'messages' => array(
+                array(
+                    'type' => 'text',
+                    'text' => $result
+                )
+            )
+        );
+    }
+}
 //fitur gambar kiblat
 if($message['type']=='text') {
 	    if ($command == '%qiblat') {
