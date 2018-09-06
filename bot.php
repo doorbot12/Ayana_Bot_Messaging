@@ -781,7 +781,7 @@ if($message['type']=='text') {
 }
 //fitur simi
 if($message['type']=='text') {
-            if ($command == 'simi') {
+            if ($command == 'Sally') {
         $result = simi(options);
         $balas = array(
             'replyToken' => $replyToken,
